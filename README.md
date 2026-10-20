@@ -1,4 +1,7 @@
 # Bug & Feature Tracker
+### IEEE LGU Student Branch AI/ML Cohort One - Fall 2026
+**Week 4 Assignment:** Practical Tasks with Git CLI & Python
+**AI/ML Leads:** Abdullah Faisal & Alina Irshad
 
 ## 1. Project Description
 The Bug & Feature Tracker is a simple Python terminal application that allows users to record software issues and feature requests, view the recorded entries, and display a summary of the tracker. 
