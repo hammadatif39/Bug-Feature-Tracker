@@ -34,8 +34,18 @@ Added input validation for entry creation and menu choices.
 Added .gitignore and project README documentation.
 
 ## 7. Screenshots
-Initial Empty Folder
-Git Initialization
-Commits Evidence
-Successful Push
-Commit History
+
+### Initial Empty Folder
+![Empty Folder](screenshots/empty-folder.png)
+
+### Git Initialization
+![Git Initialization](screenshots/git-init.png)
+
+### Commits Evidence
+![Commit Evidence](screenshots/commits.png)
+
+### Successful Push
+![Successful Git Push](screenshots/git-push.png)
+
+### Commit History
+![Commit History](screenshots/commit-history.png)
