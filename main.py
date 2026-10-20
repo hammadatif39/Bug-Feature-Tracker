@@ -4,10 +4,30 @@ entries = []
 
 def add_entry():
     print("\n--- Add New Entry ---")
-    title = input("Enter title/description: ")
-    entry_type = input("Type (Bug/Feature): ")
-    priority = input("Priority (Low/Medium/High): ")
-    status = input("Status (Open/Resolved): ")
+    
+    while True:
+        title = input("Enter title/description: ").strip()
+        if title:
+            break
+        print("Title cannot be empty. Please try again.")
+        
+    while True:
+        entry_type = input("Type (Bug/Feature): ").strip().capitalize()
+        if entry_type in ['Bug', 'Feature']:
+            break
+        print("Invalid type. Please enter 'Bug' or 'Feature'.")
+        
+    while True:
+        priority = input("Priority (Low/Medium/High): ").strip().capitalize()
+        if priority in ['Low', 'Medium', 'High']:
+            break
+        print("Invalid priority. Please enter 'Low', 'Medium', or 'High'.")
+        
+    while True:
+        status = input("Status (Open/Resolved): ").strip().capitalize()
+        if status in ['Open', 'Resolved']:
+            break
+        print("Invalid status. Please enter 'Open' or 'Resolved'.")
     
     entry = {
         "title": title,
@@ -48,7 +68,7 @@ def main():
         print("3. Display Summary Statistics")
         print("4. Exit")
         
-        choice = input("Select an option (1-4): ")
+        choice = input("Select an option (1-4): ").strip()
         
         if choice == '1':
             add_entry()
